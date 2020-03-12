@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1C0373;
+}
+
+.svg__wrap {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
+svg {
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.stagger-visualizer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  height: 17rem;
+  position: relative;
+  top: -200px;
+  left: 170px;
+}
+
+.stagger-visualizer div {
+  /*position: absolute;*/
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #BF0F70;
+  background-color: #BF0F70;
+}
+
+.japanese {
+  position: absolute;
+  top: 200px;
+  margin-left: 22%;
+  height: 200px;
+}
+
+header {
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 10;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: #F2CE1B;
+  margin: 0 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=main.css.map */
