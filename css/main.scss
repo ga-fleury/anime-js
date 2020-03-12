@@ -3,14 +3,12 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   position: absolute;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
@@ -45,7 +43,7 @@ svg {
 }
 
 .stagger-visualizer div {
-  /*position: absolute;*/
+  // position: absolute;
   width: 1rem;
   height: 1rem;
   border: 1px solid #BF0F70;
