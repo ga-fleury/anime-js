@@ -13,8 +13,8 @@ body {
   align-items: center;
   max-width: 100%;
   max-height: 100%;
-  width: 100vw;
-  height: 100vh;
+  width: calc(var(--vw, 1vw) * 100);
+  height: calc(var(--vh, 1vh) * 100);
   background-color: #1C0373;
 } 
 
@@ -91,26 +91,5 @@ header {
     &:hover {
       text-decoration: underline;
     }
-  }
-}
-
-@supports (-moz-appearance:none) {
-  .stagger-visualizer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 17rem;
-    height: 50rem;
-    position: relative;
-    top: -200px;
-    left: 170px;
-  }
-  .stagger-visualizer div {
-    /*position: absolute;*/
-    width: 1rem;
-    height: 1rem;
-    border: 1px solid #BF0F70;
-    background-color: #BF0F70;
   }
 }
