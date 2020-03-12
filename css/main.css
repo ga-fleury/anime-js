@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -19,17 +20,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 100%;
-  max-height: 100%;
-  width: calc(var(--vw, 1vw) * 100);
-  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+  height: 100vh;
   background-color: #1C0373;
 }
 
 .svg__wrap {
   position: absolute;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 svg {
