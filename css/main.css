@@ -105,4 +105,13 @@ header a {
 header a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 600px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+}
 /*# sourceMappingURL=main.css.map */
