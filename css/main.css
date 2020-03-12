@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -51,7 +55,7 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   width: 20rem;
-  height: 17rem;
+  height: 45rem;
   position: relative;
   top: -200px;
   left: 170px;
@@ -105,5 +109,33 @@ header a {
 
 header a:hover {
   text-decoration: underline;
+}
+
+@supports (-moz-appearance: none) {
+  .stagger-visualizer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 17rem;
+    height: 50rem;
+    position: relative;
+    top: -200px;
+    left: 170px;
+  }
+  .stagger-visualizer div {
+    /*position: absolute;*/
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #BF0F70;
+    background-color: #BF0F70;
+  }
 }
 /*# sourceMappingURL=main.css.map */
