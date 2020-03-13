@@ -10,7 +10,7 @@ anime({
 
 const staggerVisualizerEl = document.querySelector('.stagger-visualizer');
 const fragment = document.createDocumentFragment();
-const grid = [17, 30];
+const grid = [9, 13];
 const col = grid[0];
 const row = grid[1];
 const numberOfElements = col * row;

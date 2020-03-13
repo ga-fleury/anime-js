@@ -72,17 +72,24 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   width: 20rem;
-  height: 45rem;
+  height: 40rem;
   position: relative;
-  top: -200px;
+  top: 50px;
   left: 170px;
 }
 
+svg, header ul li {
+  -webkit-filter: drop-shadow(0 0 4px #F2CE1B);
+          filter: drop-shadow(0 0 4px #F2CE1B);
+}
+
 .stagger-visualizer div {
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
   border: 1px solid #BF0F70;
   background-color: #BF0F70;
+  -webkit-box-shadow: 0px 0px 30px 1px #BF0F70;
+          box-shadow: 0px 0px 30px 1px #BF0F70;
 }
 
 .japanese {
@@ -94,7 +101,7 @@ svg {
 
 header {
   position: absolute;
-  top: 2%;
+  top: 20px;
   width: 100%;
   max-width: 1400px;
   z-index: 10;

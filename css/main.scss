@@ -1,3 +1,6 @@
+$bg-color: #1C0373;
+$primary-color: #F2CE1B;
+
 html {
   font-size: 16px;
 }
@@ -39,6 +42,7 @@ body {
 }
 
 svg {
+  @extend %glow--yellow;
   max-width: 800px;
   position: absolute;
   top: 50%;
@@ -58,20 +62,24 @@ svg {
     justify-content: center;
     align-items: center;
     width: 20rem;
-    height: 45rem;
+    height: 40rem;
     position: relative;
-    top: -200px;
+    top: 50px;
     left: 170px;
   }
 }
 
+%glow--yellow {
+  filter: drop-shadow(0 0 4px $primary-color);
+}
 
 .stagger-visualizer div {
   // position: absolute;
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
   border: 1px solid #BF0F70;
   background-color: #BF0F70;
+  box-shadow: 0px 0px 30px 1px #BF0F70;
 }
 
 .japanese {
@@ -85,7 +93,7 @@ svg {
 
 header {
   position: absolute;
-  top: 2%;
+  top: 20px;
   width: 100%;
   max-width: 1400px;
   z-index: 10;
@@ -98,6 +106,7 @@ header {
     list-style-type: none;
 
     li {
+      @extend %glow--yellow;
       display: inline-block;
     }
   }
