@@ -228,5 +228,9 @@ header a:hover {
   body {
     position: relative;
   }
+  .stagger-visualizer div {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
