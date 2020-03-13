@@ -44,6 +44,9 @@ const staggersAnimation = anime.timeline({
   scale: .5,
   delay: anime.stagger(100, {grid: grid, from: 'center'})
 })
+.add({
+  duration: 1200
+})
 // .add({
 //   translateX: () => anime.random(-10, 10),
 //   translateY: () => anime.random(-10, 10),
@@ -58,6 +61,9 @@ const staggersAnimation = anime.timeline({
   delay: anime.stagger(4, {from: 'center'})
 })
 .add({
+  duration: 1200
+})
+.add({
   rotate: anime.stagger([90, 0], {grid: grid, from: 'center'}),
   delay: anime.stagger(50, {grid: grid, from: 'center'}),
 // })
@@ -69,6 +75,9 @@ const staggersAnimation = anime.timeline({
   rotate: 180,
   duration: 1000,
   delay: anime.stagger(100, {grid: grid, from: 'center'})
+})
+.add({
+  duration: 1200
 })
 .add({
   scaleY: 1,
