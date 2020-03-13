@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <title>Anime JS</title>
 </head>
 
 <body>
+  <div class="fadewrap" style="animation-delay: 3s;">
+  <div class="top-panel"></div>
+  </div>
   <header>
     <nav>
       <ul>
@@ -19,80 +22,53 @@
     </nav>
   </header>
   <div class="svg__wrap">
-    <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      x="0px" y="0px" viewBox="0 0 800 291.41" style="enable-background:new 0 0 800 291.41;" xml:space="preserve">
-      <style type="text/css">
-        .st0 {
-          fill: none;
-          stroke: #F2CE1B;
-          stroke-width: 10;
-          stroke-miterlimit: 10;
-          stroke-linecap: round;
-        }
-      </style>
-      <g>
-        <path class="st0" d="M163.94,98.64v142.2h-49.9l-0.52-12.67c-8.79,10.08-21.46,15.25-34.39,15.25c-30.77,0-51.45-18.62-51.45-46.8
-		c0-28.44,25.08-47.31,62.57-47.31c6.72,0,14.22,0.78,21.98,1.81v-12.15H36.47V98.64H163.94z M112.23,185.51
-		c-5.43-0.78-10.6-1.29-15.25-1.29c-9.57,0-15.77,4.65-15.77,11.38c0,6.98,3.36,11.38,12.93,11.38
-		C104.73,206.97,111.97,198.95,112.23,185.51z" />
-        <path class="st0" d="M320.36,151.9v88.94h-51.71v-81.44c0-11.63-8.53-19.13-21.72-19.13c-13.19,0-21.72,7.5-21.72,19.13v81.44
-		H173.5V98.64h49.9l0.52,13.96c11.38-11.38,26.89-16.55,41.63-16.55C298.38,96.05,320.36,118.29,320.36,151.9z" />
-        <path class="st0" d="M325.01,58.82c0-17.06,12.41-29.47,29.47-29.47c17.06,0,29.21,12.41,29.21,29.47
-		c0,17.06-12.15,29.22-29.21,29.22C337.42,88.04,325.01,75.88,325.01,58.82z M328.37,98.64h51.71v142.2h-51.71V98.64z" />
-        <path class="st0" d="M618.2,151.9v88.94h-51.71v-81.44c0-11.63-7.24-19.13-18.36-19.13s-18.36,7.5-18.36,19.13v81.44h-51.71v-81.44
-		c0-11.63-7.24-19.13-18.36-19.13c-11.12,0-18.36,7.5-18.36,19.13v81.44h-51.71V98.64h49.9l0.52,12.67
-		c10.6-10.34,24.56-15.25,38.26-15.25c16.03,0,29.22,5.95,38.26,16.55c11.38-11.63,27.15-16.55,42.66-16.55
-		C594.42,96.05,618.2,118.29,618.2,151.9z" />
-        <path class="st0" d="M767.13,187.83h-92.56c2.33,9.57,8.02,15.25,21.2,15.25c10.08,0,18.1-3.62,23.79-9.82l40.07,19.39
-		c-11.63,17.84-34.64,30.77-63.08,30.77c-46.02,0-77.05-28.44-77.05-71.62c0-45.25,29.73-75.75,74.46-75.75
-		c44.73,0,74.46,28.44,74.46,71.36C768.42,174.39,767.9,181.89,767.13,187.83z M674.57,153.45h39.56
-		c-2.58-11.38-8.79-17.06-20.17-17.06C683.1,136.38,677.15,142.33,674.57,153.45z" />
-      </g>
-    </svg> -->
     <?xml version="1.0" encoding="utf-8"?>
     <!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      x="0px" y="0px" viewBox="0 0 852.7 307.62" style="enable-background:new 0 0 852.7 307.62;" xml:space="preserve">
-      <style type="text/css">
-        .st0 {
-          fill: none;
-          stroke: #F2CE1B;
-          stroke-width: 10;
+    x="0px" y="0px" viewBox="0 0 852.7 307.62" style="enable-background:new 0 0 852.7 307.62;" xml:space="preserve">
+    <style type="text/css">
+      .st0 {
+        fill: none;
+        stroke: #F2CE1B;
+        stroke-width: 10;
           stroke-miterlimit: 10;
           stroke-linecap: round;
         }
       </style>
       <g>
         <path class="st0" d="M163.94,89.68v142.2h-49.9l-0.52-12.67c-8.79,10.08-21.46,15.25-34.39,15.25c-30.77,0-51.45-18.62-51.45-46.8
-		c0-28.44,25.08-47.31,62.57-47.31c6.72,0,14.22,0.78,21.98,1.81v-12.15H36.47V89.68H163.94z M112.23,176.55
-		c-5.43-0.78-10.6-1.29-15.25-1.29c-9.57,0-15.77,4.65-15.77,11.38c0,6.98,3.36,11.38,12.93,11.38
-		C104.73,198.01,111.97,190,112.23,176.55z" />
+        c0-28.44,25.08-47.31,62.57-47.31c6.72,0,14.22,0.78,21.98,1.81v-12.15H36.47V89.68H163.94z M112.23,176.55
+        c-5.43-0.78-10.6-1.29-15.25-1.29c-9.57,0-15.77,4.65-15.77,11.38c0,6.98,3.36,11.38,12.93,11.38
+        C104.73,198.01,111.97,190,112.23,176.55z" />
         <path class="st0" d="M320.36,142.94v88.94h-51.71v-81.44c0-11.63-8.53-19.13-21.72-19.13c-13.19,0-21.72,7.5-21.72,19.13v81.44
 		H173.5V89.68h49.9l0.52,13.96c11.38-11.38,26.89-16.55,41.63-16.55C298.38,87.1,320.36,109.33,320.36,142.94z" />
-        <path class="st0" d="M325.01,49.87c0-17.06,12.41-29.47,29.47-29.47c17.06,0,29.21,12.41,29.21,29.47
+    <path class="st0" d="M325.01,49.87c0-17.06,12.41-29.47,29.47-29.47c17.06,0,29.21,12.41,29.21,29.47
 		c0,17.06-12.15,29.22-29.21,29.22C337.42,79.08,325.01,66.93,325.01,49.87z M328.37,89.68h51.71v142.2h-51.71V89.68z" />
-        <path class="st0" d="M618.2,142.94v88.94h-51.71v-81.44c0-11.63-7.24-19.13-18.36-19.13s-18.36,7.5-18.36,19.13v81.44h-51.71
+    <path class="st0" d="M618.2,142.94v88.94h-51.71v-81.44c0-11.63-7.24-19.13-18.36-19.13s-18.36,7.5-18.36,19.13v81.44h-51.71
 		v-81.44c0-11.63-7.24-19.13-18.36-19.13c-11.12,0-18.36,7.5-18.36,19.13v81.44h-51.71V89.68h49.9l0.52,12.67
 		c10.6-10.34,24.56-15.25,38.26-15.25c16.03,0,29.22,5.95,38.26,16.55c11.38-11.63,27.15-16.55,42.66-16.55
 		C594.42,87.1,618.2,109.33,618.2,142.94z" />
-        <path class="st0" d="M767.13,178.88h-92.56c2.33,9.57,8.02,15.25,21.2,15.25c10.08,0,18.1-3.62,23.79-9.82l40.07,19.39
+    <path class="st0" d="M767.13,178.88h-92.56c2.33,9.57,8.02,15.25,21.2,15.25c10.08,0,18.1-3.62,23.79-9.82l40.07,19.39
 		c-11.63,17.84-34.64,30.77-63.08,30.77c-46.02,0-77.05-28.44-77.05-71.62c0-45.25,29.73-75.75,74.46-75.75
 		c44.73,0,74.46,28.44,74.46,71.36C768.42,165.43,767.9,172.93,767.13,178.88z M674.57,144.49h39.56
 		c-2.58-11.38-8.79-17.06-20.17-17.06C683.1,127.43,677.15,133.38,674.57,144.49z" />
-        <path class="st1" style="fill:#F2CE1B;" d="M765.32,202.41c0-17.58,14.48-31.8,32.06-31.8s31.8,14.22,31.8,31.8c0,17.58-14.22,32.06-31.8,32.06
+    <path class="st1" style="fill:#F2CE1B;" d="M765.32,202.41c0-17.58,14.48-31.8,32.06-31.8s31.8,14.22,31.8,31.8c0,17.58-14.22,32.06-31.8,32.06
 		S765.32,219.99,765.32,202.41z" />
-      </g>
-    </svg>
-
-  </div>
-  <?xml version="1.0" encoding="utf-8"?>
-  <!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-  <svg class="japanese" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-    y="0px" viewBox="0 0 208.11 600" style="enable-background:new 0 0 208.11 600;" xml:space="preserve">
-    <style type="text/css">
-      .st2 {
-        fill: #F2CE1B;
-        stroke: none;
+  </g>
+</svg>
+</div>
+<div class="stagger-wrap">
+<div class="stagger-visualizer"></div>
+</div>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="japanese" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 208.11 600"
+style="enable-background:new 0 0 208.11 600;" xml:space="preserve">
+<style type="text/css">
+  .st2 {
+    fill: #F2CE1B;
+    stroke: none;
         stroke-width: 10;
         stroke-miterlimit: 10;
       }
@@ -120,10 +96,24 @@
       l40.34,14.39L107.22,458z" />
     </g>
   </svg>
-  <div class="stagger-visualizer"></div>
+  <div class="spacer1"></div>
+  <div class="spacer2"></div>
   <script src="./node_modules/animejs/lib/anime.min.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/transition.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+  <script>
+    window.onload = function () {
+      lax.setup() // init
+
+      const updateLax = () => {
+        lax.update(window.scrollY)
+        window.requestAnimationFrame(updateLax)
+      }
+
+      window.requestAnimationFrame(updateLax)
+    }
+  </script>
 </body>
 
 </html>
