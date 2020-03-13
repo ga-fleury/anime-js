@@ -1,7 +1,7 @@
 anime({
   targets: '.st0, .st1, .st2',
   strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInOutSine',
+  easing: 'cubicBezier(.5, .05, .1, .3)',
   duration: 1500,
   delay: function(el, i) { return i * 250 },
   direction: 'forward',
@@ -23,7 +23,7 @@ staggerVisualizerEl.appendChild(fragment);
 
 const staggersAnimation = anime.timeline({
   targets: '.stagger-visualizer div',
-  easing: 'easeInOutSine',
+  easing: 'spring(1, 80, 10, 0)',
   delay: anime.stagger(50),
   loop: true,
   autoplay: false
@@ -45,29 +45,16 @@ const staggersAnimation = anime.timeline({
   delay: anime.stagger(100, {grid: grid, from: 'center'})
 })
 .add({
-  duration: 1200
-})
-// .add({
-//   translateX: () => anime.random(-10, 10),
-//   translateY: () => anime.random(-10, 10),
-//   delay: anime.stagger(8, {from: 'last'})
-// })
-.add({
   translateX: anime.stagger('.25rem', {grid: grid, from: 'center', axis: 'x'}),
   translateY: anime.stagger('.25rem', {grid: grid, from: 'center', axis: 'y'}),
   rotate: 0,
   scaleX: 2.5,
   scaleY: .25,
   delay: anime.stagger(4, {from: 'center'})
-})
-.add({
-  duration: 1200
-})
+}, '+=1200')
 .add({
   rotate: anime.stagger([90, 0], {grid: grid, from: 'center'}),
   delay: anime.stagger(50, {grid: grid, from: 'center'}),
-// })
-// .add({
   translateX: 0,
   translateY: 0,
   scale: .5,
@@ -75,17 +62,11 @@ const staggersAnimation = anime.timeline({
   rotate: 180,
   duration: 1000,
   delay: anime.stagger(100, {grid: grid, from: 'center'})
-})
-.add({
-  duration: 1200
-})
+}, '+=1200')
 .add({
   scaleY: 1,
   scale: 1,
   delay: anime.stagger(20, {grid: grid, from: 'center'})
-})
-// .add({
-//   duration: 1000
-// })
+}, '+=1200')
 
 staggersAnimation.play();

@@ -88,8 +88,8 @@ svg, header ul li {
   height: 2rem;
   border: 1px solid #BF0F70;
   background-color: #BF0F70;
-  -webkit-box-shadow: 0px 0px 30px 1px #BF0F70;
-          box-shadow: 0px 0px 30px 1px #BF0F70;
+  -webkit-box-shadow: 0px 0px 20px 1px #BF0F70;
+          box-shadow: 0px 0px 20px 1px #BF0F70;
 }
 
 .japanese {
@@ -228,6 +228,9 @@ header a:hover {
   body {
     position: relative;
   }
+}
+
+@media (hover: none) and (pointer: coarse) {
   .stagger-visualizer div {
     -webkit-box-shadow: none;
             box-shadow: none;
